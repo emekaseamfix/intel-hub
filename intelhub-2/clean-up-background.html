@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intelligent Hub</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- <nav class="navbar navbar-expand-lg bg-transparent">
+                        <a class="navbar-brand" href="#"><img src="./assets/img/Logo.svg"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link  text-white" href="#">About <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-white" href="#">FAQs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav> -->
+
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                        <a class="navbar-brand" href="#"><img src="./assets/img/Logo.svg"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link  text-white" href="#">About <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-white" href="#">FAQs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="container my-5">
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <div class="accordion" id="accordionExample">
+
+                        <!-- Background CleanUp Tab-->
+                        <div class="card">
+                            <div class="card-header accordion-header active-accordion" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Background CleanUp
+                                      </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>More Settings</p>
+                                    <p class="small font-weight-bold">Threshold strength</p>
+
+                                    <div class="pb-3">
+                                        <input class="w-100" type="range" name="points" min="0" max="10">
+                                        <div class="float-left small">Low</div>
+                                        <div class="float-right small">High</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <p class="small font-weight-bold">Edges</p>
+
+                                    <div>
+                                        <input class="w-100" type="range" name="points" min="0" max="10">
+                                        <div class="float-left small">Very soft</div>
+                                        <div class="float-right small">Very Hard</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="text-center py-3">
+                                        <button class="btn btn-danger btn-large">APPLY SETTINGS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Age and Gender Tab-->
+                        <div class="card">
+                            <div class="card-header accordion-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Age and Gender Classification
+                                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h5>Age and Gender Classification</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error porro est expedita ullam unde laborum rem dolore aliquam natus?</p>
+                                    <img class="img-fluid" src="./assets/img/Image6.png" alt="">
+
+                                    <div class="text-center mt-4">
+                                        <button class="btn btn-danger">TRY IT ON CURRENT IMAGE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Face Recognition Tab-->
+                        <div class="card">
+                            <div class="card-header accordion-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Face Recognition
+                                      </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p class="small font-weight-bold">More Settings</p>
+
+                                    <div class="d-line-flex">
+                                        <p class="text-primary cursor">Change Sample A</p>
+                                    </div>
+
+                                    <div class="d-line-flex">
+                                        <p class="text-primary cursor">Change Sample b</p>
+                                    </div>
+
+                                    <div class="text-center mt-5">
+                                        <button class="btn btn-danger">VERIFY FACE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Passive Liveness Detection -->
+                        <div class="card">
+                            <div class="card-header accordion-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                            Passive Liveness Detecion
+                                          </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>More Settings</p>
+                                    <p class="small font-weight-bold">Threshold strength</p>
+
+                                    <div class="pb-3">
+                                        <input class="w-100" type="range" name="points" min="0" max="10">
+                                        <div class="float-left small">Low</div>
+                                        <div class="float-right small">High</div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="text-center py-3">
+                                        <button class="btn btn-danger btn-large">APPLY SETTINGS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 bg-light accordion-content position-relative">
+
+                    <!-- background cleanup content -->
+                    <div id="bgCleanUp" class="position-relative">
+                        <div class="text-right py-2">
+                            <label class="label-switch d-inline-flex">
+                            View Original
+                                <input type="checkbox" class="switch-rounded switch-bootstrap yes-no "  value="1" checked="checked">
+                                <span class="lable"></span></label>
+                        </div>
+
+                        <div class="text-center pt-5">
+                            <img class="img-fluid" src="./assets/img/Image8.png" alt="">
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn downloadImageBtn position-absolute text-white">DOWNLOAD IMAGE</button>
+                        </div>
+                    </div>
+
+                    <!-- Age and Gender Classification -->
+                    <div id="ageAndGenderClassification" class="d-none position-relative">
+                        <div class="text-center pt-5">
+                            <img class="img-fluid mt-5" src="./assets/img/Image8.png" alt="">
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn downloadImageBtnAge position-absolute text-white">DOWNLOAD IMAGE</button>
+                        </div>
+                    </div>
+
+                    <!-- Face Recognition -->
+                    <div id="faceRecognition" class="d-none">
+                        <div class="text-center pt-5">
+                            <h5>Match</h5>
+                            <p class="small">Confidence Level:
+                                <Span>0.758377503</Span>
+                            </p>
+                        </div>
+                        <div class="col-md-12 position-absolute">
+                            <div class="row">
+                                <div class="col-md-5 mx-auto bg-white px-0">
+                                    <img class="img-fluid py-3 px-3" src="./assets/img/Image8.png" alt="">
+                                </div>
+                                <div class="col-md-5 mx-auto bg-white px-0">
+                                    <img class="img-fluid py-3 px-3" src="./assets/img/Image8.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Passive Liveness Detection Content -->
+                    <div id="passiveLiveness" class="d-none">
+                        <div class="text-center pt-5">
+                            <h5 class="">Passed</h5>
+                            <p class="small">Confidence Level:
+                                <Span>0.758377503</Span>
+                            </p>
+
+                            <img class="img-fluid my-4" src="./assets/img/Image8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="./assets/img/Logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
